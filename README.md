@@ -1,60 +1,59 @@
-# KenMax Website
+# 🌐 KenMax Digital Solutions
 
-KenMax is a professional digital solutions company based in Kenya, offering web development services and digital tools for businesses, professionals, schools, and communities. This repository contains the source code for the official [KenMax website](https://kenmax.co.ke), built using Django.
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+![Django](https://img.shields.io/badge/Django-4.x-green.svg)
+![Status](https://img.shields.io/badge/status-active-success)
 
----
-
-## 🌐 Live Website
-
-Visit the live site at: [https://kenmax.co.ke](https://kenmax.co.ke)
-
----
-
-## 📌 About KenMax
-
-KenMax offers custom digital platforms designed to empower:
-
-- Small businesses
-- Professionals
-- Educational institutions
-- Local communities
-
-The site serves as a central hub to showcase KenMax's solutions, collect inquiries, and promote digital transformation in Kenya and beyond.
+**KenMax** is a Kenyan digital agency building professional websites and custom systems that empower businesses, institutions, and individuals to thrive online. The official site, built with Django, showcases services ranging from e-commerce platforms to school portals and fare tracking apps.
 
 ---
 
-## 🎯 Core Features
+## 🚀 Features
 
-- **Company Portfolio Websites** – Boost your brand online
-- **Personal Portfolio Websites** – Promote your skills & projects
-- **E-commerce Solutions** – Sell products with secure checkout
-- **News & Media Portals** – SEO-ready news sites
-- **School Portals** – Manage students, results, fees, and more
-- **Business Directories** – Help users find businesses nearby
-- **Fare Tracking Apps** – Real-time matatu & boda fare tracking
-- **Event & Vendor Platforms** – List vendors, sell tickets, manage RSVPs
-- **Job Boards** – Connect job seekers with employers
-- **SACCO & Chama Systems** – Track loans, contributions, and statements
-- **POS & Inventory Systems** – Manage stock, expenses, and sales
-- **SEO Services** – Boost visibility with on-page optimization
-
----
-
-## 🛠 Tech Stack
-
-- **Framework**: Django (Python)
-- **Frontend**: HTML5, CSS3, JavaScript (possibly Bootstrap)
-- **Database**: SQLite (can be upgraded to PostgreSQL/MySQL)
-- **Deployment**: Linux server with Gunicorn & Nginx (assumed)
+- 🏢 Company & Personal Portfolio Websites  
+- 🛒 E-commerce Platforms with Secure Checkout  
+- 📰 News & Media Portals with SEO Optimization  
+- 🏫 School Portals for Student and Fee Management  
+- 📍 Business Directories with Location Tools  
+- 🚌 Fare Tracking for Matatus & Bodas  
+- 🎉 Event & Vendor Management Systems  
+- 💼 Job Boards for Listings and Applications  
+- 💰 SACCO & Chama Contribution Systems  
+- 🧾 POS & Inventory Management Tools  
+- 📈 Search Engine Optimization Services  
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ Tech Stack
 
-Follow these steps to run the project locally:
+| Layer        | Tools Used                         |
+|--------------|------------------------------------|
+| Backend      | Django 4.x (Python)                |
+| Frontend     | HTML5, CSS3, JavaScript            |
+| Database     | SQLite (development) / PostgreSQL (production) |
+| Deployment   | Gunicorn + NGINX on Linux Server   |
+| Static Files | Django Staticfiles / WhiteNoise    |
 
-### 1. Clone the Repository
+---
+
+## ⚙️ Setup Instructions
 
 ```bash
+# Clone the repository
 git clone https://github.com/kiptoo-097/kenmax.git
 cd kenmax
+
+# Create and activate a virtual environment
+python3 -m venv venv
+source venv/bin/activate  # or use venv\Scripts\activate on Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run migrations and create superuser
+python manage.py migrate
+python manage.py createsuperuser
+
+# Start the development server
+python manage.py runserver
